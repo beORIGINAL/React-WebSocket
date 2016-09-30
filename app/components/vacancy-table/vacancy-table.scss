@@ -1,0 +1,54 @@
+.vacancy {
+    background: linear-gradient(to bottom, #36d4fe 0%, #05a9ff 100%);
+    border: 1px solid #03b5e1;
+    border-radius: 2rem;
+    box-shadow: 0 0.35rem 0.35rem 0 #656565;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    min-width: 18rem;
+    padding: 0 1.5rem 1.5rem;
+
+    &:not(:last-of-type) {
+        margin-right: 1.5rem;
+    }
+
+    figcaption {
+        position: relative;
+
+        h2 {
+            color: #0a6176;
+            margin-bottom: 1rem;
+            padding-right: 2rem;
+            text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .btn-danger {
+            position: absolute;
+            right: 0;
+            top: 1rem;
+        }
+    }
+
+    .participants-wrapper {
+        background-color: #639eb7;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+        box-shadow: inset 0 0.25rem 0.6rem 0 #1e556b;
+        padding: 0.7rem;
+
+        .participant {
+            color: #598092;
+            filter: drop-shadow(0 0.12rem 0.1rem #1e556b);
+            font-size: 1.3rem;
+
+            &:not(:last-of-type) {
+                margin-right: 0.5rem;
+            }
+
+            &.active {
+                color: #a7adb0;
+                filter: drop-shadow(0 0.25rem 0.1rem #4a768b);
+            }
+        }
+    }
+}
